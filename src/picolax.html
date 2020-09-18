@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picolax</title>
+    <script async src="../vendor/components.js"></script>
+    <link rel="stylesheet" href="./style.pcss" />
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="./footer.css" />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+    ></script>
+  </head>
+  <body class="font-inter">
+    <!-- Navbar Starts -->
+    <link rel="html-import" href="./navbar.html" />
+    <!-- Navbar Ends -->
+    <!-- Contents Starts -->
+    <main
+      class="mt-8 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-20 xl:mt-24"
+    >
+      <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+        <div
+          class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left"
+        >
+          <h2
+            class="mt-1 text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-6xl lg:text-5xl xl:text-6xl"
+          >
+            Picolax
+          </h2>
+          <br />
+          <div class="prose text-gray-500">
+            <p>
+              This video will help demonstrate how to prepare your Picolax
+              medication. Picolax is taken in 2 or 3 seperate doses or what has
+              been prescribed to you by your doctor. The timing of those doses
+              should have been on a printout provided to you by your doctor.
+              Bowel Prep text messages will be sent to help remember when to
+              take your doses. Drink the solution slowly but completely. Please
+              continue drinking adequate clear fluids. Refer to the Consumer
+              Medical Information in the link above for the full medication
+              details.
+            </p>
+          </div>
+        </div>
+        <div
+          class="mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center"
+        >
+          <div class="mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
+            <div class="w-full h-full flex items-center justify-center">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/6UexGPIFfB0"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Contents Ends -->
+    <!-- Footer Starts -->
+    <link rel="html-import" href="./footer.html" />
+    <!-- Footer Ends -->
+  </body>
+</html>

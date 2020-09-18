@@ -1,0 +1,13 @@
+{
+	"folders": [
+    {
+      "path": "..\\Bowel-Prep-Frontend-Marketing"
+    },
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "magiclink"
+  }
+}

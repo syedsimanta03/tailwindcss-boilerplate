@@ -1,0 +1,437 @@
+<!-- <link rel="stylesheet" href="navbar.css"> -->
+<div class="relative bg-white">
+  <div
+    class="flex items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10 z-10"
+  >
+    <div>
+      <a href="/" class="flex">
+        <img
+          class="h-8 w-auto sm:h-10"
+          src="../assets/logo.svg
+              "
+          alt="Workflow"
+        />
+      </a>
+    </div>
+
+    <!-- Mobile Medication center start-->
+    <div
+      class="md:hidden flex mx-auto"
+      @click.away="open = false"
+      x-data="{ open: false }"
+    >
+      <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
+      <button
+        type="button"
+        class="group text-gray-500 inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+        @click="open = !open"
+      >
+        <a
+          href="medication.html"
+          class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+        >
+          Medication
+        </a>
+        <!-- Item active: "text-gray-600", Item inactive: "text-gray-400" -->
+        <svg
+          preserveAspectRatio="xMidYMid meet"
+          class="text-gray-400 h-5 w-5 group-hover:text-gray-500 group-focus:text-gray-500 transition ease-in-out duration-150"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+
+      <!-- 'More' flyout menu, show/hide based on flyout menu state-->
+      <div
+        class="absolute z-50 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-xs sm:px-0"
+        x-show="open"
+      >
+        <div class="rounded-lg shadow-lg">
+          <div class="rounded-lg shadow-xs overflow-hidden">
+            <div
+              class="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8"
+            >
+              <a
+                href="glycoprep-c.html"
+                class="-m-3 p-3 block space-y-1 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
+              >
+                <p class="text-base leading-6 font-medium text-gray-900">
+                  Glycoprep-C
+                </p>
+              </a>
+              <a
+                href="moviprep.html"
+                class="-m-3 p-3 block space-y-1 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
+              >
+                <p class="text-base leading-6 font-medium text-gray-900">
+                  Moviprep
+                </p>
+              </a>
+              <a
+                href="picolax.html"
+                class="-m-3 p-3 block space-y-1 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
+              >
+                <p class="text-base leading-6 font-medium text-gray-900">
+                  Picolax
+                </p>
+              </a>
+              <a
+                href="picosalax.html"
+                class="-m-3 p-3 block space-y-1 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
+              >
+                <p class="text-base leading-6 font-medium text-gray-900">
+                  Picosalax
+                </p>
+              </a>
+              <a
+                href="plenvu.html"
+                class="-m-3 p-3 block space-y-1 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
+              >
+                <p class="text-base leading-6 font-medium text-gray-900">
+                  Plenvu
+                </p>
+              </a>
+              <a
+                href="prepkit-c.html"
+                class="-m-3 p-3 block space-y-1 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
+              >
+                <p class="text-base leading-6 font-medium text-gray-900">
+                  Prepkit-C
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Medication center end-->
+
+    <div
+      class="hidden md:flex-1 md:flex md:items-center md:justify-between md:space-x-12"
+    >
+      <nav x-data="{ open: false }" class="flex space-x-10">
+        <a
+          href="our-solutions.html"
+          class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+        >
+          Our Solutions
+        </a>
+        <a
+          href="procedure.html"
+          class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+        >
+          Procedure
+        </a>
+        <a
+          href="diet.html"
+          class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+        >
+          Diet
+        </a>
+
+        <div
+          class="relative"
+          @click.away="open = false"
+          x-data="{ open: false }"
+        >
+          <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
+          <button
+            type="button"
+            class="group text-gray-500 inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+            @click="open = !open"
+          >
+            <a
+              href="medication.html"
+              class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+            >
+              Medication
+            </a>
+            <!-- Item active: "text-gray-600", Item inactive: "text-gray-400" -->
+            <svg
+              preserveAspectRatio="xMidYMid meet"
+              class="text-gray-400 h-5 w-5 group-hover:text-gray-500 group-focus:text-gray-500 transition ease-in-out duration-150"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+
+          <!-- 'More' flyout menu, show/hide based on flyout menu state medication deatails-->
+          <div
+            class="absolute z-50 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-xs sm:px-0"
+            x-show="open"
+            x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="transform opacity-0 scale-95"
+            x-transition:enter-end="transform opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-75"
+            x-transition:leave-start="transform opacity-100 scale-100"
+            x-transition:leave-end="transform opacity-0 scale-95"
+          >
+            <div class="rounded-lg shadow-lg">
+              <div class="rounded-lg shadow-xs overflow-hidden">
+                <div
+                  class="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8"
+                >
+                  <a
+                    href="glycoprep-c.html"
+                    class="-m-3 p-3 block space-y-1 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
+                  >
+                    <p class="text-base leading-6 font-medium text-gray-900">
+                      Glycoprep-C
+                    </p>
+                  </a>
+                  <a
+                    href="moviprep.html"
+                    class="-m-3 p-3 block space-y-1 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
+                  >
+                    <p class="text-base leading-6 font-medium text-gray-900">
+                      Moviprep
+                    </p>
+                  </a>
+                  <a
+                    href="picolax.html"
+                    class="-m-3 p-3 block space-y-1 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
+                  >
+                    <p class="text-base leading-6 font-medium text-gray-900">
+                      Picolax
+                    </p>
+                  </a>
+                  <a
+                    href="picosalax.html"
+                    class="-m-3 p-3 block space-y-1 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
+                  >
+                    <p class="text-base leading-6 font-medium text-gray-900">
+                      Picosalax
+                    </p>
+                  </a>
+                  <a
+                    href="plenvu.html"
+                    class="-m-3 p-3 block space-y-1 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
+                  >
+                    <p class="text-base leading-6 font-medium text-gray-900">
+                      Plenvu
+                    </p>
+                  </a>
+                  <a
+                    href="prepkit-c.html"
+                    class="-m-3 p-3 block space-y-1 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
+                  >
+                    <p class="text-base leading-6 font-medium text-gray-900">
+                      Prepkit-C
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="flex items-center space-x-8">
+        <a
+          href="#"
+          class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+        >
+          Sign in
+        </a>
+        <span class="inline-flex rounded-md shadow-sm">
+          <a
+            href="#"
+            class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-teal-600 hover:bg-teal-500 focus:outline-none focus:border-teal-700 focus:shadow-outline-teal active:bg-teal-700 transition ease-in-out duration-150"
+          >
+            Sign up
+          </a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!--
+    Mobile menu, show/hide based on mobile menu state."-->
+  <div x-data="{ open: false }">
+    <div class="inline ml-auto absolute top-6 right-4 bottom-0 md:hidden">
+      <button
+        @click="open = true"
+        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+      >
+        <svg
+          preserveAspectRatio="xMidYMid meet"
+          class="h-6 w-6"
+          stroke="currentColor"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            class="inline-flex"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <div
+      class="absolute z-50 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+      x-show="open"
+      x-transition:enter="transition ease-out duration-200"
+      x-transition:enter-start="transform opacity-0 scale-95"
+      x-transition:enter-end="transform opacity-100 scale-100"
+      x-transition:leave="transition ease-in duration-75"
+      x-transition:leave-start="transform opacity-100 scale-100"
+      x-transition:leave-end="transform opacity-0 scale-95"
+    >
+      <button
+        @click="open = false"
+        class="absolute z-20 top-6 right-4 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+      >
+        <svg
+          preserveAspectRatio="xMidYMid meet"
+          class="h-6 w-6"
+          stroke="currentColor"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            class="inline-flex"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          ></path>
+        </svg>
+      </button>
+      <div class="rounded-lg shadow-lg">
+        <div class="rounded-lg shadow-xs bg-white divide-y-2 divide-gray-50">
+          <div class="pt-5 pb-6 px-5 space-y-6">
+            <div class="flex items-center justify-between">
+              <div>
+                <img
+                  class="h-8 w-auto"
+                  src="../assets/logo.svg
+                      "
+                  alt="Workflow"
+                />
+              </div>
+            </div>
+            <div>
+              <!-- Hamburger -->
+              <nav class="grid gap-6">
+                <a
+                  href="our-solutions.html"
+                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
+                >
+                  <div
+                    class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-teal-400 text-white"
+                  >
+                    <svg
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      class="presentation-chart-line w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-base leading-6 font-medium text-gray-900">
+                    Our Solutions
+                  </div>
+                </a>
+                <a
+                  href="procedure.html"
+                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
+                >
+                  <div
+                    class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-teal-400 text-white"
+                  >
+                    <svg
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      class="clipboard-list w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-base leading-6 font-medium text-gray-900">
+                    Procedure
+                  </div>
+                </a>
+                <a
+                  href="diet.html"
+                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
+                >
+                  <div
+                    class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-teal-400 text-white"
+                  >
+                    <svg
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      class="cake w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-base leading-6 font-medium text-gray-900">
+                    Diet
+                  </div>
+                </a>
+                <a
+                  href="medication.html"
+                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
+                >
+                  <div
+                    class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-teal-400 text-white"
+                  >
+                    <svg
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      class="beaker w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-base leading-6 font-medium text-gray-900">
+                    Medication
+                  </div>
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
